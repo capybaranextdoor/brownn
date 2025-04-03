@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409339415205",
+    "project_id": "brownn",
+    "storage_bucket": "brownn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409339415205:android:005a99ac47c8092df35b4c",
+        "android_client_info": {
+          "package_name": "com.example.brownn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSn8Ntsn7wlG3RCrLF_mV9DQXtjgv3Gz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+   pluginManagement {
+       def flutterSdkPath = {
+           def properties = new Properties()
+           def propertiesFile = new File(settingsDir.parentFile, 'local.properties')
+           if (propertiesFile.exists()) {
+               propertiesFile.withReader('UTF-8') { reader -> properties.load(reader) }
+           }
+                      def flutterSdkPath = properties.getProperty('flutter.sdk', null)
+
+           if (flutterSdkPath == null) {
+               throw new RuntimeException("flutter.sdk not set in local.properties")
+           }
+
+           return flutterSdkPath
+
+       }()
+
+       plugins {
+           id 'com.android.application' version '8.1.0'
+           id 'com.android.library' version '8.1.0'
+           id 'org.jetbrains.kotlin.android' version '1.9.22'
+       }
+
+       repositories {
+           google()
+           mavenCentral()
+           gradlePluginPortal()
+       }
+   }
+
+   include ':app'
