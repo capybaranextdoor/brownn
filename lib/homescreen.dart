@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'screens/food_screen.dart';
 import 'screens/carbon_screen.dart';
 import 'screens/profile_screen.dart';
+import 'map_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -127,6 +127,15 @@ class HomeView extends StatelessWidget {
                   _buildRecentActivities(context),
                 ],
               ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MapScreen()),
+                );
+              },
+              child: Text('Open Map'),
             ),
           ],
         ),
